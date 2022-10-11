@@ -19,7 +19,7 @@ public class AnnotationSstudy {
   }
   @Test
   public void ValidateDashBoard()
-  {
+  { 
 	  Reporter.log("DashBoard Validate");
 	 Reporter.log("DashBoard Validate",true); 
   }
@@ -32,19 +32,6 @@ public class AnnotationSstudy {
   {
 	  Reporter.log("Logout Successfully",true);
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
 }

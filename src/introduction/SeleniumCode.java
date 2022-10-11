@@ -15,9 +15,9 @@ public class SeleniumCode {
 		
 		WebDriver driver= new ChromeDriver();
 		
-		driver.get("https://vctcpune.com/");
+		driver.get("https://google.com/");
 		
-		driver.findElement(By.xpath("//a[text()='PRACTICE']")).click();
+		
 	}
 
 }

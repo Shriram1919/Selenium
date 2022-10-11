@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class KitePinPage {
 
+
 	@FindBy(id="pin")private WebElement Pin;
 	@FindBy(xpath ="//button[@type='submit']")private WebElement Continue;
 	

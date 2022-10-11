@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class KiteLoginPage {
+public class KiteLoginPage1 {
 
 	// 1.data members
 	@FindBy(id="userid")private WebElement UserName;
@@ -14,7 +14,7 @@ public class KiteLoginPage {
 	
 	//2. constructor
 	
-	public KiteLoginPage(WebDriver driver)
+	public KiteLoginPage1(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 		

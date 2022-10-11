@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import kiteAppPom.KiteHomePage;
-import kiteAppPom.KiteLoginPage;
+import kiteAppPom.KiteLoginPage1;
 import kiteAppPom.KitePinPage;
 
 public class TestClass {
@@ -32,17 +32,19 @@ public class TestClass {
         String PASSWORD = MySheet.getRow(1).getCell(1).getStringCellValue();
         String PIN = MySheet.getRow(1).getCell(2).getStringCellValue();
        
-        KiteLoginPage  Login=new KiteLoginPage(driver);
-        Login.UN();
-        Login.Pass();
-        Login.click();
-        Thread.sleep(1000);
+        KiteLoginPage login= new KiteLoginPage(driver);
+        login.UserName(USERNAME);
+        login.sendPassWord(PASSWORD);
+        login.clickOnLoginButton();
+        Thread.sleep(2000);
+        
         KitePinPage Pin =new KitePinPage(driver);
-        Pin.PinPage();
+        Pin.PinPage(PIN);
         Pin.ContinueButton();
         Thread.sleep(1000);
-//        KiteHomePage Home =new KiteHomePage(driver);
-//        Home.
+       
+        KiteHomePage Home =new KiteHomePage(driver);
+         Home.UserIDButton();
         
         
         

@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNgKeywords.TimeoutUse">
+      <class name="kiteAppTestClass1.validateUserID">
         <methods>
-          <include name="a"/>
+          <include name="ValidateIderID"/>
+          <include name="loginKite"/>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="openbrowser"/>
         </methods>
-      </class> <!-- testNgKeywords.TimeoutUse -->
+      </class> <!-- kiteAppTestClass1.validateUserID -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

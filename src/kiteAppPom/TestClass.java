@@ -14,13 +14,13 @@ public class TestClass {
 		 driver.get("https://kite.zerodha.com/");
 	     Thread.sleep(2000);
 	     
-	     KiteLoginPage KL=new KiteLoginPage(driver);
+	     KiteLoginPage1 KL=new KiteLoginPage1(driver);
 	     KL.UN();
 	     KL.Pass();
 	     KL.click();
 	     Thread.sleep(2000);
 	     KitePinPage KP=new KitePinPage(driver);
-	     KP.PinPage();
+	     KP.PinPage(null);
 	     KP.ContinueButton();
 	     Thread.sleep(2000);
 	     KiteHomePage KH=new KiteHomePage(driver);

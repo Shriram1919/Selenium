@@ -14,7 +14,7 @@ public class KitePinPage {
 	{
 		PageFactory.initElements(driver, this);
 	}
-	public void PinPage()
+	public void PinPage(String PIN)
 	{
 		Pin.sendKeys("982278");
 	}

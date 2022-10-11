@@ -25,12 +25,12 @@ public class NoOfLinkInPage {
 		 
 		 Iterator<WebElement> itr = link.iterator();	
 		 
-//		 while(itr.hasNext())
-//		 {
+		 while(itr.hasNext())
+		 {
 		 
-//			 System.out.println(itr.next().getText());
-//		 }
-//		 
+			 System.out.println(itr.next().getText());  
+		 }
+		 
 		 for(WebElement AL:link)
 		 {
 			System.out.println(AL.getText()); 
